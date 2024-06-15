@@ -296,29 +296,25 @@ public class BookHotelPage extends BaseClass {
 	}
 
 	public void addPaymentDetails(String card, io.cucumber.datatable.DataTable dataTable) {
+		List<Map<String, String>> asMaps = dataTable.asMaps();
+		Map<String, String> map = null;
+
 		if (card.equals("Debit Card")) {
-			List<Map<String, String>> asMaps = dataTable.asMaps();
-			Map<String, String> map = asMaps.get(0);
-			String selectCard = map.get("Select Card");
-			String cardNo = map.get("Card No");
-			String cardName = map.get("Card Name");
-			String month = map.get("Month");
-			String year = map.get("Year");
-			String cvv = map.get("CVV");
-			addPaymentDetailss(card, selectCard, cardNo, cardName, month, year, cvv);
+
+			map = asMaps.get(0);
+
 		} else if (card.equals("Credit Card")) {
 
-			List<Map<String, String>> asMaps = dataTable.asMaps();
-			Map<String, String> map = asMaps.get(1);
-			String selectCard = map.get("Select Card");
-			String cardNo = map.get("Card No");
-			String cardName = map.get("Card Name");
-			String month = map.get("Month");
-			String year = map.get("Year");
-			String cvv = map.get("CVV");
-			addPaymentDetailss(card, selectCard, cardNo, cardName, month, year, cvv);
+			map = asMaps.get(1);
 
 		}
+		String selectCard = map.get("Select Card");
+		String cardNo = map.get("Card No");
+		String cardName = map.get("Card Name");
+		String month = map.get("Month");
+		String year = map.get("Year");
+		String cvv = map.get("CVV");
+		addPaymentDetailss(card, selectCard, cardNo, cardName, month, year, cvv);
 
 	}
 

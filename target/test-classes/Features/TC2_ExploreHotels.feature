@@ -1,9 +1,11 @@
 @Search
 Feature: Explore Hotels Module
 
+   
+
   @Search1
   Scenario Outline: Search hotels with all fields
-    Given User is on the OMR Branch hotel page
+   Given User is on the OMR Branch hotel page
     When User enter "<userName>" and "<password>"
     Then User should verify sucees message after login "Welcome Srini"
     When User search hotel "<state>","<city>","<roomType>","<checkIn>","<check-out>","<No of Room>","<No of Adults>" and "<No of Childs>"
@@ -15,7 +17,7 @@ Feature: Explore Hotels Module
 
   @Search2
   Scenario Outline: Search hotels with only mandatory fields
-    Given User is on the OMR Branch hotel page
+   Given User is on the OMR Branch hotel page
     When User enter "<userName>" and "<password>"
     Then User should verify sucees message after login "Welcome Srini"
     When User search hotel "<state>","<city>","<checkIn>","<check-out>","<No of Room>" and "<No of Adults>"
@@ -27,7 +29,7 @@ Feature: Explore Hotels Module
 
   @Search3
   Scenario Outline: Search hotels without entering any fields
-    Given User is on the OMR Branch hotel page
+   Given User is on the OMR Branch hotel page
     When User enter "<userName>" and "<password>"
     Then User should verify sucees message after login "Welcome Srini"
     And User click Search button
@@ -39,7 +41,7 @@ Feature: Explore Hotels Module
 
   @Search4
   Scenario Outline: Search hotels with all fields and verify the hotel price sorting from low to high
-    Given User is on the OMR Branch hotel page
+   Given User is on the OMR Branch hotel page
     When User enter "<userName>" and "<password>"
     Then User should verify sucees message after login "Welcome Srini"
     When User search hotel "<state>","<city>","<roomType>","<checkIn>","<check-out>","<No of Room>","<No of Adults>" and "<No of Childs>"
@@ -53,7 +55,7 @@ Feature: Explore Hotels Module
 
   @Search5
   Scenario Outline: Search hotels with all fields and verify the hotel price sorting from high to low
-    Given User is on the OMR Branch hotel page
+   Given User is on the OMR Branch hotel page
     When User enter "<userName>" and "<password>"
     Then User should verify sucees message after login "Welcome Srini"
     When User search hotel "<state>","<city>","<roomType>","<checkIn>","<check-out>","<No of Room>","<No of Adults>" and "<No of Childs>"
@@ -67,7 +69,7 @@ Feature: Explore Hotels Module
 
   @Search6
   Scenario Outline: Search hotels with all fields and verify the hotel name in Descending order
-    Given User is on the OMR Branch hotel page
+   Given User is on the OMR Branch hotel page
     When User enter "<userName>" and "<password>"
     Then User should verify sucees message after login "Welcome Srini"
     When User search hotel "<state>","<city>","<roomType>","<checkIn>","<check-out>","<No of Room>","<No of Adults>" and "<No of Childs>"
@@ -81,7 +83,7 @@ Feature: Explore Hotels Module
 
   @Search7
   Scenario Outline: Search hotels with all fields and verify the hotel name in Ascending order
-    Given User is on the OMR Branch hotel page
+   Given User is on the OMR Branch hotel page
     When User enter "<userName>" and "<password>"
     Then User should verify sucees message after login "Welcome Srini"
     When User search hotel "<state>","<city>","<roomType>","<checkIn>","<check-out>","<No of Room>","<No of Adults>" and "<No of Childs>"
@@ -95,7 +97,7 @@ Feature: Explore Hotels Module
 
   @Search8
   Scenario Outline: Search hotels with all fields and select all room type
-    Given User is on the OMR Branch hotel page
+   Given User is on the OMR Branch hotel page
     When User enter "<userName>" and "<password>"
     Then User should verify sucees message after login "Welcome Srini"
     When User search hotel "<state>","<city>","<roomType>","<checkIn>","<check-out>","<No of Room>","<No of Adults>" and "<No of Childs>"
@@ -108,7 +110,7 @@ Feature: Explore Hotels Module
 
   @Search9
   Scenario Outline: Search hotels with all fields an verify the header
-    Given User is on the OMR Branch hotel page
+   Given User is on the OMR Branch hotel page
     When User enter "<userName>" and "<password>"
     Then User should verify sucees message after login "Welcome Srini"
     When User search hotel "<state>","<city>","<roomType>","<checkIn>","<check-out>","<No of Room>","<No of Adults>" and "<No of Childs>"

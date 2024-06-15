@@ -13,7 +13,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(tags = "@Cancel4", plugin = { "pretty",
+@CucumberOptions(tags = "@Book", plugin = { "pretty",
 		"json:target/omrhotelbooking.json" }, dryRun = false, glue = "com.omrbranch.stepdefinition", features = "src\\test\\resources\\Features")
 public class TestRunnerClass extends BaseClass {
 

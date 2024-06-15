@@ -32,13 +32,10 @@ public class TC5_ChangeBookingStep {
 		pom.getMyBookingPage().searchOrderIdByInput(orderId);
 	}
 
-//	@When("User search the {string}#YPJCO46488\"\"")
-//	public void user_search_the_ypjco46488(String orderId) {
-//		pom.getMyBookingPage().searchOrderIdByInput(orderId);
-//	}
-
-
-
+	@When("User search the Order ID {string}")
+	public void user_search_the_order_id(String orderId) {
+		pom.getMyBookingPage().searchOrderIdByInput(orderId);
+	}
 
 	@Then("User should verify same booked Order ID is present or not")
 	public void userShouldVerifyThatSameBookedOrderIdIsPresent() {

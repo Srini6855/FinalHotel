@@ -43,10 +43,11 @@ public class BaseClass {
 	public static void maximizewindow() {
 		driver.manage().window().maximize();
 	}
+
 	// 2.1 Maximize the window
-		public static void minimizeindow() {
-			driver.manage().window().minimize();
-		}
+	public static void minimizeindow() {
+		driver.manage().window().minimize();
+	}
 
 	// 3. Insert value in text box
 	public void elementSendKeys(WebElement element, String data) {

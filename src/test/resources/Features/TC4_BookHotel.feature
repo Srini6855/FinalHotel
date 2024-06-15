@@ -211,7 +211,7 @@ Feature: Book Hotel Module
       | srinipmps@gmail.com | abEuKW6S@asg3Nv | Tamil Nadu | Coimbatore | Deluxe   | 2024-06-25 | 2024-06-26 | 1-One      | 3-Three      |            2 | Mr.               | Srinivasu  | Aruchamy  | 9487715046 | srinipmps@gmail.com | Veg preference | seleniumtraining@vbc |
 
   @Book10
-  Scenario Outline: Book hotel without enetering any field in upi field , book field and verify all the error messagw
+  Scenario Outline: Book hotel without enetering any field in upi field , book field and verify all the error message
     Given User is on the OMR Branch hotel page
     When User enter "<userName>" and "<password>"
     Then User should verify sucees message after login "Welcome Srini"
